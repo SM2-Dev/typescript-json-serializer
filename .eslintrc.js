@@ -244,7 +244,6 @@ module.exports = {
         'use-isnan': 'error',
         'valid-typeof': 'off',
         'no-else-return': 'error',
-        'no-unused-expressions': 'error',
-        'no-unused-vars': 'error'
+        'no-unused-expressions': 'error'
     }
 };
