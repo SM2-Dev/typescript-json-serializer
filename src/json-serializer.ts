@@ -452,15 +452,9 @@ export class JsonSerializer {
 
                 return string;
             case 'number':
-                if (!isNumber(value)) {
-                    this.error(error);
-                    return undefined;
-                }
-
-                return +value;
+                return Number(value);
             case 'boolean':
-                this.error(error);
-                return undefined;
+                return value.toString().toLowerCase() === 'true';
             case 'date':
                 if (!isDateValue(value)) {
                     this.error(error);
