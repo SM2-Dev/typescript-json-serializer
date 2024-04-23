@@ -19,9 +19,9 @@ A typescript library to deserialize json into typescript classes and serialize c
 ## Installation
 
 ```sh
-npm install typescript-json-serializer --save
+npm install @sm2dev/typescript-json-serializer --save
 # or
-yarn add typescript-json-serializer
+yarn add @sm2dev/typescript-json-serializer
 ```
 
 You also need to set **experimentalDecorators** and **emitDecoratorMetadata** to true into the tsconfig.json file.
@@ -42,7 +42,7 @@ For example:
 ## Usage
 
 ```typescript
-import { JsonSerializer, throwError } from 'typescript-json-serializer';
+import { JsonSerializer, throwError } from '@sm2dev/typescript-json-serializer';
 
 import { json } from '../json/data';
 import { Organization } from '../models/organization';
@@ -81,7 +81,7 @@ const data = defaultSerializer.serialize(organization);
 
 ```typescript
 // Import decorators from library
-import { JsonObject, JsonProperty } from 'typescript-json-serializer';
+import { JsonObject, JsonProperty } from '@sm2dev/typescript-json-serializer';
 
 // Enums
 export enum Gender {
